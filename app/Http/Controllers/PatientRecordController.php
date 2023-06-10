@@ -13,9 +13,32 @@ class PatientRecordController extends Controller
     {
         $inputRecords = PatientRecord::where('type', '攝入')->orderBy('dateTime', 'desc')->get();
         $outputRecords = PatientRecord::where('type', '排出')->orderBy('dateTime', 'desc')->get();
-        $totalInput = PatientRecord::where('type', '攝入')->sum('unit');
-        $totalOutput = PatientRecord::where('type', '排出')->sum('unit');
-        return view('welcome', ['inputRecords' => $inputRecords, 'outputRecords' => $outputRecords, 'totalInput' => $totalInput, 'totalOutput' => $totalOutput]);
+        $totalInputSum = PatientRecord::where('type', '攝入')->sum('unit');
+        $totalOutputSum = PatientRecord::where('type', '排出')->sum('unit');
+
+        $dateLabels = PatientRecord::orderBy('dateTime', 'desc')->pluck('dateTime')->map(function ($date) {
+            return \Carbon\Carbon::parse($date)->format('Y-m-d');
+        })->all();
+
+
+        $totalInput = PatientRecord::where('type', '攝入')
+            ->selectRaw('date(dateTime) as date, sum(unit) as total')
+            ->groupBy('date')
+            ->pluck('total', 'date')
+            ->all();
+
+        $totalOutput = PatientRecord::where('type', '排出')
+            ->selectRaw('date(dateTime) as date, sum(unit) as total')
+            ->groupBy('date')
+            ->pluck('total', 'date')
+            ->all();
+
+
+        $totalInputSum = array_sum($totalInput);
+        $totalOutputSum = array_sum($totalOutput);
+
+
+        return view('welcome', ['inputRecords' => $inputRecords, 'outputRecords' => $outputRecords, 'totalInput' => $totalInputSum, 'totalOutput' => $totalOutputSum, 'dateLabels' => $dateLabels, 'totalInputChart' => $totalInput, 'totalOutputChart' => $totalOutput, 'totalInputSum' => $totalInputSum, 'totalOutputSum' => $totalOutputSum]);
     }
 
     public function store(Request $request)

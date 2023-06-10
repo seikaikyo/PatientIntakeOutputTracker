@@ -4,6 +4,7 @@
     <title>病人飲食與排出計量表</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container mt-5">
@@ -133,8 +134,66 @@
                 </table>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="pieChart" width="200" height="100"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
     <!-- Optional JavaScript -->
+    <script>
+        // let ctxLine = document.getElementById('lineChart').getContext('2d');
+        // let lineChart = new Chart(ctxLine, {
+        //     type: 'line',
+        //     data: {
+        //         labels: @json($dateLabels),
+        //         datasets: [{
+        //             label: '攝入量',
+        //             data: @json($totalInput),
+        //             borderColor: 'rgba(75, 192, 192, 1)',
+        //             fill: false,
+        //         }, {
+        //             label: '排出量',
+        //             data: @json($totalOutput),
+        //             borderColor: 'rgba(255, 99, 132, 1)',
+        //             fill: false,
+        //         }]
+        //     }
+        // });
+
+        let ctxPie = document.getElementById('pieChart').getContext('2d');
+        let pieChart = new Chart(ctxPie, {
+            type: 'pie',
+            data: {
+                labels: ['攝入', '排出'],
+                datasets: [{
+                    data: [@json($totalInputSum), @json($totalOutputSum)],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+    </script>
+<script>
+    $(document).ready(function(){
+        // Your existing chart generation code goes here...
+    });
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
