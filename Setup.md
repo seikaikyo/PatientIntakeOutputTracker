@@ -1,13 +1,28 @@
+#Patient Intake & Output Tracker
+
+This project is a patient intake and output tracker for hospital use. It keeps track of patient fluid intake and output, and generates statistical reports for doctors to analyze.
+
+Choose a language for setup instructions:
+
+- [Project setup guide (English)](#project-setup-guide-english)
+  - [Setup Instructions](#setup-instructions)
+- [專案設定指南 (正體中文)](#專案設定指南-正體中文)
+  - [設定指南](#設定指南)
+- [プロジェクト設定ガイド (日本語)](#プロジェクト設定ガイド-日本語)
+  - [セットアップ方法](#セットアップ方法)
+
 # Project setup guide (English)
 
 This guide will walk you through the installation and configuration of the Patient Intake and Output Tracking System.
 
-Requirements
+##Requirements
 You'll need:
 
 PHP >= 7.3
 Composer
 Laravel >= 8.x
+
+## Setup Instructions
 
 1. Clone this repository:
     ```bash
@@ -40,11 +55,14 @@ Laravel >= 8.x
 本指南將引導你完成病患攝取與排泄追蹤系統的安裝與設定。
 
 ##需求
+
 你需要以下工具：
 
 PHP >= 7.3
 Composer
 Laravel >= 8.x
+
+## 設定指南
 
 1. 複製此存儲庫：
     ```bash
@@ -72,7 +90,7 @@ Laravel >= 8.x
      php artisan migrate --seed
     ```
 
-#プロジェクト設定ガイド (日本語)
+# プロジェクト設定ガイド (日本語)
 
 このガイドは、患者の摂取および排出トラッキングシステムのインストールと設定を案内します。
 
@@ -83,7 +101,7 @@ PHP >= 7.3
 Composer
 Laravel >= 8.x
 
-# セットアップ方法
+## セットアップ方法
 
 1. このリポジトリをクローンします：
     ```bash
