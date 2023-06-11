@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>病人飲食與排出計量表</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +38,7 @@
                         <input type="text" id="unit" name="unit" placeholder="cc/g/ml" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-primary">送出</button>
+                    <a href="/download-report" class="btn btn-secondary">下載報告</a>
                 </form>
             </div>
             <div class="col-6">

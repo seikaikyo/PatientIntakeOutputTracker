@@ -24,3 +24,4 @@ Route::get('/', [PatientRecordController::class, 'index'])->name('index');
 Route::post('/submit', [PatientRecordController::class, 'store']);
 Route::delete('/delete/{id}', [PatientRecordController::class, 'destroy'])->name('delete-record');
 Route::delete('/delete-all', [PatientRecordController::class, 'deleteAll'])->name('deleteAll');
+Route::get('/download-report', 'App\Http\Controllers\PatientRecordController@downloadReport');

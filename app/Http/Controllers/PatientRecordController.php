@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
@@ -89,5 +90,18 @@ class PatientRecordController extends Controller
         PatientRecord::truncate();
         Log::info('All records deleted');
         return redirect()->route('index');
+    }
+
+    public function downloadReport()
+    {
+        // 獲取資料
+        $inputRecords = PatientRecord::where('type', '攝入')->orderBy('dateTime', 'desc')->get();
+        $outputRecords = PatientRecord::where('type', '排出')->orderBy('dateTime', 'desc')->get();
+        $totalInputSum = PatientRecord::where('type', '攝入')->sum('unit');
+        $totalOutputSum = PatientRecord::where('type', '排出')->sum('unit');
+
+        // 產生 PDF
+        $pdf = PDF::loadView('report', ['inputRecords' => $inputRecords, 'outputRecords' => $outputRecords, 'totalInput' => $totalInputSum, 'totalOutput' => $totalOutputSum]);
+        return $pdf->download('report.pdf');
     }
 }
