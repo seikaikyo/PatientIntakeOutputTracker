@@ -1,4 +1,4 @@
-# Setup Guide (English)
+# Project setup guide (English)
 
 This guide will walk you through the installation and configuration of the Patient Intake and Output Tracking System.
 
