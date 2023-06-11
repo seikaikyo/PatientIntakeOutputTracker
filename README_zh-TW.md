@@ -1,0 +1,106 @@
+# Patient Intake and Output Tracking System
+
+**[English](README_en.md) | [中文](README_zh-TW.md) | [日本語](README_ja.md)**
+
+Please choose a language to continue.
+
+# 病患攝取與排泄追蹤系統 (README_zh-TW.md)
+
+## 概述
+
+「病患攝取與排泄追蹤系統」是一款應用程式，專為醫療專業人員追蹤病人的攝取與排泄而設計。使用此系統，護士可以記錄病人攝取或排泄的物質類型和量。然後，醫生可以查看和分析數據以進行診斷和治療。
+
+## 功能
+
+1. **數據輸入**：記錄攝取/排泄的類型、內容和量。數據輸入的時間和日期也可以被記錄。
+2. **數據顯示**：以表格格式查看病人攝取/排泄的記錄。如有需要，可以刪除每一個輸入。
+3. **攝取/排泄總量計算**：自動計算病人攝取或排泄的物質總量。
+4. **一鍵下載**：一鍵將數據下載為 PDF 文件，方便共享和存儲。
+5. **數據視覺化**：以條形圖格式查看攝取/排泄數據，讓理解更為清晰和直觀。
+
+## 界面
+
+系統擁有使用者友善的界面，使醫療專業人員能輕鬆輸入和查看數據。
+
+1. **攝取/排泄輸入表單**：界面左側有一個用於輸入病人攝取或排泄細節的表單。
+2. **數據顯示表**：右側有一個顯示輸入數據的表格，並可選擇刪除記錄。
+3. **下載按鈕**：下方有一個用於將顯示的數據下載為 PDF 文件的按鈕。
+4. **條形圖**：下方會顯示一個比較攝取和排泄總量的條形圖。
+
+## 使用方式
+
+1. **數據輸入**：在界面左側的表單中填入攝取或排泄的數據。
+2. **刪除數據**：點擊表格內對應數據條目旁的「刪除」按鈕，以刪除該條記錄。
+3. **下載數據**：點擊界面下方的「下載」按鈕，將數據下載為 PDF 文件。
+4. **顯示圖表**：滾動到界面下方，查看以條形圖格式顯示的攝取/排泄數據。
+
+## 設定
+
+關於設定和安裝的步驟，請參見 [專案設定指南](Setup.md)。
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+
+### Premium Partners
+
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[OP.GG](https://op.gg)**
+-   **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+-   **[Lendio](https://lendio.com)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
