@@ -1,7 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PatientRecordApiController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('/patient-records-api', [PatientRecordApiController::class, 'index']);
+Route::post('/patient-records-api', [PatientRecordApiController::class, 'store']);
+Route::delete('/patient-records-api/{id}', [PatientRecordApiController::class, 'destroy']);
+Route::post('/patient-records-api/delete-all', [PatientRecordApiController::class, 'deleteAll']);
