@@ -4,6 +4,8 @@
 
 Please choose a language to continue.
 
+![My Project Screenshot](images/screenshot.png)
+
 # Patient Intake and Output Tracking System
 
 ## Overview
