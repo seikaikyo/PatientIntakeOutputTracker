@@ -12,6 +12,8 @@ Please choose a language to continue.
 
 The "Patient Intake and Output Tracking System" is an application for healthcare professionals to keep track of patients' intake and output. With this system, nurses can record the amount and type of substances consumed or expelled by a patient. The data can then be viewed and analyzed by doctors for diagnosis and treatment purposes.
 
+This entire project was developed with the integral assistance of OpenAI's ChatGPT. From conception to completion, every part of the process was carried out in a dialogue with this powerful AI model. This project stands as testament to ChatGPT's capabilities, its user-friendly nature, and the transformative potential of AI in software development. I hope that this project will inspire others to explore the possibilities offered by tools like ChatGPT.
+
 ## Features
 
 1. **Data Entry**: Record the type, content, and amount of intake/output. The time and date of the data entry can also be logged.
@@ -46,6 +48,8 @@ Please refer to the [project setup guide](Setup.md) for setup and installation i
 
 「病患攝取與排泄追蹤系統」是一款應用程式，專為醫療專業人員追蹤病人的攝取與排泄而設計。使用此系統，護士可以記錄病人攝取或排泄的物質類型和量。然後，醫生可以查看和分析數據以進行診斷和治療。
 
+這整個項目是在 OpenAI 的 ChatGPT 的全面協助下開發的。從概念到完成，每一個過程都是與這個強大的 AI 模型進行的對話。此項目證明了 ChatGPT 的能力、其使用者友善的特性，以及 AI 在軟體開發上的革命性潛力。我希望這個項目能激勵其他人探索像 ChatGPT 這樣的工具所提供的可能性。
+
 ## 功能
 
 1. **數據輸入**：記錄攝取/排泄的類型、內容和量。數據輸入的時間和日期也可以被記錄。
@@ -79,6 +83,8 @@ Please refer to the [project setup guide](Setup.md) for setup and installation i
 ## 概要
 
 「患者の摂取と排出追跡システム」は、医療従事者が患者の摂取と排出を追跡するためのアプリケーションです。このシステムを使用すると、看護師は患者が摂取または排出した物質の種類と量を記録することができます。その後、データは診断と治療のために医師によって閲覧および分析されます。
+
+このプロジェクト全体は、OpenAI の ChatGPT の重要な支援を受けて開発されました。概念から完成まで、プロセスの各段階は、この強力な AI モデルとの対話を通じて行われました。このプロジェクトは、ChatGPT の能力、ユーザーフレンドリーな性質、そしてソフトウェア開発における AI の変革的な可能性を証明しています。私は、このプロジェクトが、ChatGPT のようなツールが提供する可能性を探求する他の人々を触発することを願っています。
 
 ## 機能
 
